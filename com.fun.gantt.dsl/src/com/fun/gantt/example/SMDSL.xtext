@@ -1,0 +1,16 @@
+grammar com.fun.gantt.example.SMDSL with org.eclipse.xtext.common.Terminals
+
+generate sMDSL "http://www.fun.com/gantt/example/SMDSL"
+
+
+Entry:
+	Activity | Dependency
+;
+
+Activity:
+	'Activity' name=ID '{' (contents += Entry)* '}'
+;
+
+Dependency:
+	'Dependency' '->' to = [Activity]
+;

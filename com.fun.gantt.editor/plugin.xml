@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated gantt -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.fun.gantt.gantt.presentation.GanttModelWizardID"
+            name="%_UI_GanttModelWizard_label"
+            class="com.fun.gantt.gantt.presentation.GanttModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GanttModelFile.gif">
+         <description>%_UI_GanttModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated gantt -->
+      <editor
+            id="com.fun.gantt.gantt.presentation.GanttEditorID"
+            name="%_UI_GanttEditor_label"
+            icon="icons/full/obj16/GanttModelFile.gif"
+            extensions="gantt"
+            class="com.fun.gantt.gantt.presentation.GanttEditor"
+            contributorClass="com.fun.gantt.gantt.presentation.GanttActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

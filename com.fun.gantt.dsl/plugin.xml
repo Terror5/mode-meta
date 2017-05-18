@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://www.fun.com/gantt/example/SMDSL"
+			class = "com.fun.gantt.example.sMDSL.SMDSLPackage"
+			genModel = "model/generated/SMDSL.genmodel" />
+	</extension>
+</plugin>
